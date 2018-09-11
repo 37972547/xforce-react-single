@@ -1,0 +1,23 @@
+{
+  "name": "xforce-react-single",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+	"dev": "./bin/dev.js"
+  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/37972547/xforce-react-single.git"
+  },
+  "keywords": [],
+  "author": "wangxianfa <wangxianfa@xforceplus.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/37972547/xforce-react-single/issues"
+  },
+  "homepage": "https://github.com/37972547/xforce-react-single#readme"
+}
