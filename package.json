@@ -8,7 +8,7 @@
   },
   "bin": {
 	"dev": "./bin/dev.js"
-  }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/37972547/xforce-react-single.git"
