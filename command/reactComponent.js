@@ -1,20 +1,19 @@
-#!/usr/bin/env node
 const program  = require('commander');
 const path = require('path');
 const command = require('../utils/exec.js').command;
-const configPath = path.join(__dirname,'../config/reactsingle/');
+const configPath = path.join(__dirname,'../config/reactcomponent/');
 
 program
     .command('react-component <name>')
     .description('react 组件项目')
     .action(async function(name,ops){
         const scripts = {
-            "prodIE": `webpack --config ${configPath}webpack.config.proIE7.js  --mode production`,
-            "dev": `webpack-dev-server --config ${configPath}webpack.config.dev.js`,
-            "devTest" : `webpack --config ${configPath}webpack.config.dev.js`,
+            "prodIE": `webpack --config ${configPath}webpack.config.proIE7.js  --mode production --open`,
+            "dev": `webpack-dev-server --config ${configPath}webpack.config.dev.js --open`,
+            "devTest" : `webpack --config ${configPath}webpack.config.dev.js --open`,
             "wrap": `webpack --config ${configPath}webpack.config.wrapComponent.js`,
             "prod": `webpack --config ${configPath}webpack.config.pro.js  --mode production`,
-            "devIE": `webpack-dev-server --config ${configPath}webpack.config.testIE.js`,
+            "devIE": `webpack-dev-server --config ${configPath}webpack.config.testIE.js --open`,
         };
         let str = '';
         switch (name) {

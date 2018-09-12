@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 const program  = require('commander');
 const path = require('path');
 const command = require('../utils/exec.js').command;
