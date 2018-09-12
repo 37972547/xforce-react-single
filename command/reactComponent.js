@@ -5,15 +5,16 @@ const command = require('../utils/exec.js').command;
 const configPath = path.join(__dirname,'../config/reactsingle/');
 
 program
-    .command('react-single <name>')
-    .description('react 单页项目')
+    .command('react-component <name>')
+    .description('react 组件项目')
     .action(async function(name,ops){
         const scripts = {
-            "dev": `webpack-dev-server --inline --config ${configPath}webpack.config.dev.js --open`,
-            "prodIE": `webpack --config ${configPath}webpack.config.proIE7.js  --mode production && set NODE_ENV=production`,
-            "mock": `webpack-dev-server --config ${configPath}webpack.config.mock.js --open`,
-            "prod": `webpack --config ${configPath}webpack.config.pro.js && set NODE_ENV=production`,
-            "devIE": `webpack-dev-server --config ${configPath}webpack.config.devIE.js`,
+            "prodIE": `webpack --config ${configPath}webpack.config.proIE7.js  --mode production`,
+            "dev": `webpack-dev-server --config ${configPath}webpack.config.dev.js`,
+            "devTest" : `webpack --config ${configPath}webpack.config.dev.js`,
+            "wrap": `webpack --config ${configPath}webpack.config.wrapComponent.js`,
+            "prod": `webpack --config ${configPath}webpack.config.pro.js  --mode production`,
+            "devIE": `webpack-dev-server --config ${configPath}webpack.config.testIE.js`,
         };
         let str = '';
         switch (name) {
@@ -23,14 +24,17 @@ program
             case 'prodIE':
                 str = scripts.prodIE;
                 break;
-            case 'mock':
-                str = scripts.mock;
+            case 'devTest':
+                str = scripts.devTest;
                 break;
             case 'prod':
                 str = scripts.prod;
                 break;
             case 'devIE':
                 str = scripts.devIE;
+                break;
+            case 'wrap':
+                str = scripts.wrap;
                 break;
             default:
                 // console.log('not found %d', name)
