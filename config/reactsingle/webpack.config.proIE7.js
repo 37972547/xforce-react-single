@@ -145,7 +145,7 @@ const config = {
     }),
     new es3ifyPlugin(),
     new HtmlWebPackPlugin({
-      template: './src/index.html',
+      template: path.resolve('./src/index.html'),
       filename: './index.html',
       minify: {
         // 压缩HTML文件

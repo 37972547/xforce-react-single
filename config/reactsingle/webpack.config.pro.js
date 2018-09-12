@@ -57,7 +57,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     new Es3ifyPlugin(),
     new UglifyJSPlugin(),
     new HtmlWebPackPlugin({
-      template: './src/index.html',
+      template: path.resolve('./src/index.html'),
       filename: './index.html',
       minify: {
         // 压缩HTML文件

@@ -63,7 +63,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebPackPlugin({
-      template: './src/index.html',
+      template: path.resolve('./src/index.html'),
       filename: './index.html'
     }),
     new MiniCssExtractPlugin({

@@ -17,8 +17,8 @@ function resolve (dir) {
 const config = {
   devtool: 'cheap-module-source-map',
   entry: {
-    mock: './mock/workAsset.js',
-    app: './src/index.jsx'
+    mock: path.resolve('./mock/workAsset.js'),
+    app: path.resolve('./src/index.jsx')
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -106,7 +106,7 @@ const config = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: './src/index.html',
+      template: path.resolve('./src/index.html'),
       filename: './index.html'
     }),
     new webpack.HotModuleReplacementPlugin(),
