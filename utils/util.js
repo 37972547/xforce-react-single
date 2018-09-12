@@ -18,6 +18,6 @@ const getCmdStr = function (name) {
     return packageScripts[name]
 };
 
-modules.exports = {
+module.exports  = {
     getCmdStr: getCmdStr
 };
