@@ -1,4 +1,5 @@
 const program  = require('commander');
+const fse = require('fs-extra');
 // 加载所有命令行
 fse.readdir(path.resolve(__dirname, '../', './command')).then((files) => {
     files.filter(item => /.+\.js$/.test(item))

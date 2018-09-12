@@ -1,6 +1,6 @@
 {
   "name": "sanctuary-build",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "afasf",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,7 @@
   "homepage": "https://github.com/37972547/xforce-react-single#readme",
   "dependencies": {
     "commander": "^2.16.0",
-    "request": "^2.70.0"
+    "request": "^2.70.0",
+    "fs-extra": "^7.0.0"
   }
 }
