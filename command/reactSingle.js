@@ -13,7 +13,7 @@ const scripts = {
 };
 
 program
-    .command('run <name>')
+    .command('react-single <name>')
     .description('打包')
     .action(async function(name,ops){
         let str = '';
@@ -43,7 +43,6 @@ program
             successMsg: ``
         });
     });
-program.parse(process.argv);
 
 /*
 const build = {

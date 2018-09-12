@@ -1,13 +1,13 @@
 {
   "name": "sanctuary-build",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "afasf",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-	"sanctuary-build-react-single": "./bin/reactSingle.js"
+	"sanctuary-build": "./bin/index.js"
   },
   "repository": {
     "type": "git",
