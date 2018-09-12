@@ -1,13 +1,13 @@
 {
-  "name": "xforce-react-single",
-  "version": "1.0.1",
+  "name": "sanctuary-build",
+  "version": "0.0.1",
   "description": "afasf",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-	"dev": "./bin/dev.js"
+	"sanctuary-build-react-single": "./bin/reactSingle.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/37972547/xforce-react-single/issues"
   },
-  "homepage": "https://github.com/37972547/xforce-react-single#readme"
+  "homepage": "https://github.com/37972547/xforce-react-single#readme",
+  "dependencies": {
+    "commander": "^2.16.0",
+    "request": "^2.70.0"
+  }
 }
