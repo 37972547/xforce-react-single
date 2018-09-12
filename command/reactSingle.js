@@ -20,7 +20,7 @@ program
         if(cmdStr) {
             const set = new Set([...cmdStr.split('&&')]);
             for( let [key, value]of set.entries()) {
-                await system.command({
+                await command({
                     cmdStr: value,
                     beforeMsg: value,
                     errMsg: '',
