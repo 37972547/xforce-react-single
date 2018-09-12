@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+const path = require('path');
 const program  = require('commander');
 const fse = require('fs-extra');
 // 加载所有命令行
