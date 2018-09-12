@@ -27,10 +27,10 @@ const config = {
   resolve: {
     extensions: ['.js', '.json', '.jsx'],
     alias: {
-      '@': path.join(__dirname, './src'),
-      pages: path.join(__dirname, './src/pages'),
-      utils: path.join(__dirname, './src/utils'),
-      common: path.join(__dirname, './src/common')
+      '@': path.resolve('./src'),
+      pages: path.resolve('./src/pages'),
+      utils: path.resolve('./src/utils'),
+      common: path.resolve('./src/common')
     }
   },
   module: {
@@ -133,7 +133,7 @@ const config = {
   mode: 'development'
 };
 
-if(webpackConfigJson) {
+/*if(webpackConfigJson) {
   let entry = webpackConfigJson.entry;
   let alias = webpackConfigJson.alias;
   // 配置入口文件
@@ -165,6 +165,6 @@ if(webpackConfigJson) {
     }
     config.resolve.alias = alias
   }
-}
+}*/
 
 module.exports = config;

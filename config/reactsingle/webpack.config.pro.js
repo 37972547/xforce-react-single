@@ -1,13 +1,13 @@
 const path = require('path');
-const webpack = require(path.resolve('node_modules', 'webpack'));
-const merge = require(path.resolve('node_modules', 'webpack-merge'));
-const autoprefixer = require(path.resolve('node_modules', 'autoprefixer'));
-const MiniCssExtractPlugin = require(path.resolve('node_modules', 'mini-css-extract-plugin'));
-const HtmlWebPackPlugin = require(path.resolve('node_modules', 'html-webpack-plugin'));
+const webpack = require('webpack');
+const merge = require('webpack-merge');
+const autoprefixer = require('autoprefixer');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
-const Es3ifyPlugin = require(path.resolve('node_modules', 'es3ify-webpack-plugin'));
-const CleanWebpackPlugin = require(path.resolve('node_modules', 'clean-webpack-plugin'));
-const UglifyJSPlugin = require(path.resolve('node_modules', 'uglifyjs-webpack-plugin'));
+const Es3ifyPlugin = require('es3ify-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const baseWebpackConfig = require('./webpack.config.base.js');
 
@@ -24,14 +24,14 @@ const webpackConfig = merge(baseWebpackConfig, {
         test: /\.(sa|sc|c)ss$/,
         use: [
           MiniCssExtractPlugin.loader,
-          path.resolve('node_modules', 'css-loader'),
-          path.resolve('node_modules', 'sass-loader'),
+          'css-loader',
+          'sass-loader',
           {
-            loader: path.resolve('node_modules', 'postcss-loader'),
+            loader: 'postcss-loader',
             options: {
               ident: 'postcss',
               plugins: () => [
-                require(path.resolve('node_modules', 'postcss-flexbugs-fixes')),
+                require('postcss-flexbugs-fixes'),
                 autoprefixer({
                   browsers: [
                     '>1%',

@@ -1,11 +1,11 @@
 const path = require('path');
-const MiniCssExtractPlugin = require(path.resolve('node_modules', 'mini-css-extract-plugin'));
-const OptimizeCSSAssetsPlugin = require(path.resolve('node_modules', 'optimize-css-assets-webpack-plugin')); // MINI CSS
-const HtmlWebPackPlugin = require(path.resolve('node_modules', 'html-webpack-plugin'));
-const es3ifyPlugin = require(path.resolve('node_modules', 'es3ify-webpack-plugin'));
-const UglifyJsPlugin = require(path.resolve('node_modules', 'uglifyjs-webpack-plugin'));
-const CleanWebpackPlugin = require(path.resolve('node_modules', 'clean-webpack-plugin'));
-const webpack = require(path.resolve('node_modules', 'webpack'));
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin'); // MINI CSS
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+const es3ifyPlugin = require('es3ify-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const webpack = require('webpack');
 
 console.log(__dirname);
 
@@ -61,7 +61,7 @@ const config = {
       {
         test: /\.js|jsx$/,
         use: {
-          loader: path.resolve('node_modules', 'babel-loader'),
+          loader: 'babel-loader',
           options: {
             presets: [
               [
@@ -87,7 +87,7 @@ const config = {
         test: /\.html$/,
         use: [
           {
-            loader: path.resolve('node_modules', 'html-loader'),
+            loader: 'html-loader',
             options: { minimize: true }
           }
         ]
@@ -103,7 +103,7 @@ const config = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-        loader: path.resolve('node_modules', 'url-loader'),
+        loader: 'url-loader',
         options: {
           limit: 10000,
           name: assetsPath('img/[name].[hash:7].[ext]')
@@ -111,7 +111,7 @@ const config = {
       },
       {
         test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
-        loader: path.resolve('node_modules','url-loader'),
+        loader: 'url-loader',
         options: {
           limit: 10000,
           name: assetsPath('media/[name].[hash:7].[ext]')
@@ -162,7 +162,7 @@ const config = {
   mode: 'development'
 };
 
-if(webpackConfigJson) {
+/*if(webpackConfigJson) {
   let entry = webpackConfigJson.entry;
   let alias = webpackConfigJson.alias;
   // 配置入口文件
@@ -194,6 +194,6 @@ if(webpackConfigJson) {
     }
     config.resolve.alias = alias
   }
-}
+}*/
 
 module.exports = config

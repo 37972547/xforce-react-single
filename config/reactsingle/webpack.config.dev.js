@@ -3,11 +3,11 @@ const webpack = require('webpack');
 const merge = require('webpack-merge');
 const portfinder = require('portfinder');
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
-const autoprefixer = require('autoprefixer'));
+const autoprefixer = require('autoprefixer');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const baseWebpackConfig = require('./webpack.config.base.js');
-const es3ifyPlugin = require('es3ify-webpack-plugin'));
+const es3ifyPlugin = require('es3ify-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
@@ -30,7 +30,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
           'css-loader',
           'sass-loader',
           {
-            loader: 'postcss-loader'),
+            loader: 'postcss-loader',
             options: {
               ident: 'postcss',
               plugins: () => [

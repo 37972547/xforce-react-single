@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f834579a-b4a1-402a-8c3e-58fe5690d03a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/bin/reactSingle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/dev.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.base.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.base.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/reactsingle/webpack.config.base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.dev.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/reactsingle/webpack.config.dev.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.devIE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.devIE.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/reactsingle/webpack.config.devIE.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.mock.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.mock.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/reactsingle/webpack.config.mock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.pro.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.pro.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/reactsingle/webpack.config.pro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.proIE7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.proIE7.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/reactsingle/webpack.config.proIE7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/reactsingle/webpack.config.base.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/reactsingle/webpack.config.base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/reactsingle/webpack.config.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/reactsingle/webpack.config.dev.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/reactsingle/webpack.config.devIE.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/reactsingle/webpack.config.devIE.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/reactsingle/webpack.config.mock.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/reactsingle/webpack.config.mock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/reactsingle/webpack.config.pro.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/reactsingle/webpack.config.pro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/reactsingle/webpack.config.proIE7.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/reactsingle/webpack.config.proIE7.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -33,7 +25,7 @@
       <file leaf-file-name="reactSingle.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/reactSingle.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="76">
               <caret line="4" column="65" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
             </state>
           </provider>
@@ -53,7 +45,67 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="webpack.config.mock.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/reactsingle/webpack.config.mock.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="167" column="3" lean-forward="true" selection-start-line="167" selection-start-column="3" selection-end-line="167" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.config.pro.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/reactsingle/webpack.config.pro.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1976">
+              <caret line="110" column="20" lean-forward="true" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.config.proIE7.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/reactsingle/webpack.config.proIE7.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3246">
+              <caret line="30" column="21" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.config.dev.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/reactsingle/webpack.config.dev.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.config.base.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/reactsingle/webpack.config.base.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.config.devIE.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/reactsingle/webpack.config.devIE.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="196" column="3" selection-start-line="164" selection-end-line="196" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>path.resolve('node_modules',</find>
+      <find>path.resolve('node_modules',</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,8 +114,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/bin/dev.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/bin/reactSingle.js" />
+        <option value="$PROJECT_DIR$/config/reactsingle/webpack.config.dev.js" />
+        <option value="$PROJECT_DIR$/config/reactsingle/webpack.config.base.js" />
+        <option value="$PROJECT_DIR$/config/reactsingle/webpack.config.devIE.js" />
+        <option value="$PROJECT_DIR$/config/reactsingle/webpack.config.mock.js" />
+        <option value="$PROJECT_DIR$/config/reactsingle/webpack.config.pro.js" />
+        <option value="$PROJECT_DIR$/config/reactsingle/webpack.config.proIE7.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -111,6 +169,12 @@
             <path>
               <item name="xforce-react-single" type="b2602c69:ProjectViewProjectNode" />
               <item name="xforce-react-single" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="reactsingle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xforce-react-single" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xforce-react-single" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -154,12 +218,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1536713573705</updated>
-      <workItem from="1536713576031" duration="2735000" />
+      <workItem from="1536713576031" duration="4909000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2735000" />
+    <option name="totallyTimeSpent" value="4909000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -173,7 +237,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info id="npm" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3293944" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -197,8 +261,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/reactSingle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="76">
           <caret line="4" column="65" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/reactsingle/webpack.config.dev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/reactsingle/webpack.config.base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/reactsingle/webpack.config.devIE.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="196" column="3" selection-start-line="164" selection-end-line="196" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/reactsingle/webpack.config.mock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="167" column="3" lean-forward="true" selection-start-line="167" selection-start-column="3" selection-end-line="167" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/reactsingle/webpack.config.pro.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1976">
+          <caret line="110" column="20" lean-forward="true" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/reactsingle/webpack.config.proIE7.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3246">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="21" />
         </state>
       </provider>
     </entry>
