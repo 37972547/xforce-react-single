@@ -1,7 +1,9 @@
 const program  = require('commander');
 const path = require('path');
+const util = require('../utils/util');
 const command = require('../utils/exec.js').command;
 const configPath = path.join(__dirname,'../config/reactsingle/');
+const utilPath = path.join(__dirname,'../utils/');
 
 program
     .command('react-single <name>')
@@ -9,9 +11,9 @@ program
     .action(async function(name,ops){
         const scripts = {
             "dev": `webpack-dev-server --inline --config ${configPath}webpack.config.dev.js --open`,
-            "prodIE": `webpack --config ${configPath}webpack.config.proIE7.js  --mode production && set NODE_ENV=production`,
+            "prodIE": `webpack --config ${configPath}webpack.config.proIE7.js  --mode production && set NODE_ENV=production&& set NODE_ENV=dev && node ${utilPath}workAsset.js`,
             "mock": `webpack-dev-server --config ${configPath}webpack.config.mock.js --open`,
-            "prod": `webpack --config ${configPath}webpack.config.pro.js && set NODE_ENV=production`,
+            "prod": `webpack --config ${configPath}webpack.config.pro.js && set NODE_ENV=production && set NODE_ENV=dev && node ${utilPath}workAsset.js`,
             "devIE": `webpack-dev-server --config ${configPath}webpack.config.devIE.js`,
         };
         let str = '';
@@ -34,12 +36,20 @@ program
             default:
                 // console.log('not found %d', name)
         }
-        await command({
-            cmdStr: str,
-            beforeMsg: ``,
-            errMsg: ``,
-            successMsg: ``
-        });
+        const cmdStr = util.getCmdStr(name);
+        if(cmdStr) {
+            const set = new Set([...cmdStr.split('&&')]);
+            for( let [key, value]of set.entries()) {
+                await system.command({
+                    cmdStr: value,
+                    beforeMsg: value,
+                    errMsg: '',
+                    successMsg: ''
+                });
+            }
+        }else {
+            console.log(name + ' not found');
+        }
     });
 
 /*
