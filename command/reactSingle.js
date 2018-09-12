@@ -1,6 +1,5 @@
 const program  = require('commander');
 const path = require('path');
-const util = require('../utils/util');
 const command = require('../utils/exec.js').command;
 const configPath = path.join(__dirname,'../config/reactsingle/');
 const utilPath = path.join(__dirname,'../utils/');
@@ -16,27 +15,8 @@ program
             "prod": `webpack --config ${configPath}webpack.config.pro.js && set NODE_ENV=production && set NODE_ENV=dev && node ${utilPath}workAsset.js`,
             "devIE": `webpack-dev-server --config ${configPath}webpack.config.devIE.js`,
         };
-        let str = '';
-        switch (name) {
-            case 'dev':
-                str = scripts.dev;
-                break;
-            case 'prodIE':
-                str = scripts.prodIE;
-                break;
-            case 'mock':
-                str = scripts.mock;
-                break;
-            case 'prod':
-                str = scripts.prod;
-                break;
-            case 'devIE':
-                str = scripts.devIE;
-                break;
-            default:
-                // console.log('not found %d', name)
-        }
-        const cmdStr = util.getCmdStr(name);
+
+        const cmdStr = script.name;
         if(cmdStr) {
             const set = new Set([...cmdStr.split('&&')]);
             for( let [key, value]of set.entries()) {

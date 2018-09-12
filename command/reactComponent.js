@@ -15,35 +15,20 @@ program
             "prod": `webpack --config ${configPath}webpack.config.pro.js  --mode production`,
             "devIE": `webpack-dev-server --config ${configPath}webpack.config.testIE.js --open`,
         };
-        let str = '';
-        switch (name) {
-            case 'dev':
-                str = scripts.dev;
-                break;
-            case 'prodIE':
-                str = scripts.prodIE;
-                break;
-            case 'devTest':
-                str = scripts.devTest;
-                break;
-            case 'prod':
-                str = scripts.prod;
-                break;
-            case 'devIE':
-                str = scripts.devIE;
-                break;
-            case 'wrap':
-                str = scripts.wrap;
-                break;
-            default:
-                // console.log('not found %d', name)
+        const cmdStr = script.name;
+        if(cmdStr) {
+            const set = new Set([...cmdStr.split('&&')]);
+            for( let [key, value]of set.entries()) {
+                await system.command({
+                    cmdStr: value,
+                    beforeMsg: value,
+                    errMsg: '',
+                    successMsg: ''
+                });
+            }
+        }else {
+            console.log(name + ' not found');
         }
-        await command({
-            cmdStr: str,
-            beforeMsg: ``,
-            errMsg: ``,
-            successMsg: ``
-        });
     });
 
 /*

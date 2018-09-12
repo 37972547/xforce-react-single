@@ -1,6 +1,6 @@
 {
   "name": "sanctuary-build",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "sanctuary-build webpack.config",
   "main": "index.js",
   "scripts": {
