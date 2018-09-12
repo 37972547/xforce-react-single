@@ -16,7 +16,7 @@ program
             "devIE": `webpack-dev-server --config ${configPath}webpack.config.devIE.js`,
         };
 
-        const cmdStr = scripts.name;
+        const cmdStr = scripts[name];
         if(cmdStr) {
             const set = new Set([...cmdStr.split('&&')]);
             for( let [key, value]of set.entries()) {

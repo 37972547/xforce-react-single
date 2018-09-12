@@ -15,7 +15,7 @@ program
             "prod": `webpack --config ${configPath}webpack.config.pro.js  --mode production`,
             "devIE": `webpack-dev-server --config ${configPath}webpack.config.testIE.js --open`,
         };
-        const cmdStr = scripts.name;
+        const cmdStr = scripts[name];
         if(cmdStr) {
             const set = new Set([...cmdStr.split('&&')]);
             for( let [key, value]of set.entries()) {
